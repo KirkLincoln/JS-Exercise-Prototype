@@ -129,10 +129,10 @@ console.log(josh.stomach);
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. If a function is in the global scope, then the value of "this" will be the window.
+    2. Whenever a function is called with the . syntax, the corresponding object replaces the obj to the left of the dot.
+    3. Every time someone uses a constructor function, it returns an instance of an object with "this" being replaced by the chosen obj name.
+    4. .call() and .apply() both explicitly define the "this" keyword.
   */
   
   
