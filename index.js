@@ -43,7 +43,7 @@ function Airplane(name) {
     this.name = name;
     this.age = age;
     this.stomach = [];
-
+    
   }
 
   Person.prototype.eat = function(edible) {
@@ -60,6 +60,11 @@ function Airplane(name) {
  
 const josh = new Person('Josh', 33);
 console.log(josh);
+josh.eat("pizza");
+console.log(josh.stomach);
+josh.poop();
+console.log(josh.stomach);
+
   
   
   
@@ -113,11 +118,12 @@ console.log(josh);
    this.favoriteToy = favoriteToy
   }
 
+  Baby.prototype = Object.create(Person.prototype);
+
   Baby.prototype.play = function() {
     return  `Playing with ${this.favoriteToy}`
   }
 
-  Person.prototype = Object(Baby.prototype);
  
   
   /* 
